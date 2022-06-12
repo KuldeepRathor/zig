@@ -11,12 +11,6 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     final user = FirebaseAuth.instance.currentUser!;
 
-    // final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
-    // //
-    // _signOut() async {
-    //   await firebaseAuth.signOut();
-    // }
-
     double padding = 25;
     var sidePadding = EdgeInsets.symmetric(horizontal: padding);
     return SafeArea(
@@ -43,14 +37,17 @@ class HomePage extends StatelessWidget {
                           color: Colors.white,
                           child: Icon(
                             Icons.menu,
+                            // color: Color(0xff7C68EE),
                           ),
                         ),
-                        Text(user.email!),
+                        Text(
+                          user.email!,
+                          style: TextStyle(color: Color(0xff7C68EE)),
+                        ),
                         InkWell(
-                          onTap:() async{
+                          onTap: () async {
                             await FirebaseAuth.instance.signOut();
-                        },
-
+                          },
                           child: BorderBox(
                             padding: EdgeInsets.all(50),
                             width: 50,
@@ -58,6 +55,7 @@ class HomePage extends StatelessWidget {
                             color: Colors.white,
                             child: Icon(
                               Icons.logout,
+                              // color: Color(0xff7C68EE),
                             ),
                           ),
                         ),
@@ -67,7 +65,24 @@ class HomePage extends StatelessWidget {
                   addVerticalSpace(padding),
                   CarouselSlider(
                     options: CarouselOptions(height: 500.0),
-                    items: [1, 2, 3, 4, 5, 6, 7].map((i) {
+                    items: [
+                      1,
+                      2,
+                      3,
+                      4,
+                      5,
+                      6,
+                      7,
+                      8,
+                      9,
+                      10,
+                      11,
+                      12,
+                      13,
+                      14,
+                      15,
+                      16
+                    ].map((i) {
                       return Builder(
                         builder: (BuildContext context) {
                           return Container(
@@ -99,7 +114,9 @@ class HomePage extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                           children: const [
                             Icon(Icons.favorite),
-                            Text("Save for Later"),
+                            Text(
+                              "Save for Later",
+                            ),
                           ],
                         ),
                       ),

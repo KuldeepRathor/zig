@@ -4,6 +4,7 @@ import 'package:zig/screens/homepage.dart';
 import 'package:zig/screens/login_page.dart';
 import 'package:firebase_core/firebase_core.dart';
 
+
 Future main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
@@ -44,7 +45,7 @@ class MainPage extends StatelessWidget {
               );
             } else if (snapshot.hasError) {
               return const Center(
-                child: Text("Something Went Wrong Please Try asgain Later!"),
+                child: Text("Something Went Wrong Please Try again Later!"),
               );
             } else if (snapshot.hasData) {
               return const HomePage();
