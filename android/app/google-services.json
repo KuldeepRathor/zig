@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "672411032147",
+    "project_id": "zig-image-slider",
+    "storage_bucket": "zig-image-slider.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:672411032147:android:84135be8b32d31f14c44a6",
+        "android_client_info": {
+          "package_name": "com.example.zig"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "672411032147-110gmjn570g2c7tjq5lacnn22pn3vv0o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlHxEeL4vm9rEffjdumMFCwMwtSKWuX4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "672411032147-110gmjn570g2c7tjq5lacnn22pn3vv0o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
